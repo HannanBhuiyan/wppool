@@ -1,0 +1,33 @@
+/*!
+Template Name: WPPOOL
+Template URI: https://www.WPPOOL.com
+Author: WPPOOL
+Author URI: https://www.WPPOOL.com
+Version: 1.0.0
+Text Domain: WPPOOL
+Tags: sofware company, techcompany, agency,
+*/
+
+/*============================================ 
+    CSS INDEX 01
+    =============================
+    01. HEADER SECTION
+    02. MOBILE MENU
+    03. HERO SECTION
+    ================================ 
+}
+/*============================================
+
+
+
+/* ============ LINK ALL CSS FILE ============= */
+
+
+
+@import "./module-css/common.css";
+@import "./module-css/hero.css";  
+@import "./module-css/home-1.css";   
+@import "./module-css/footer.css"; 
+@import "./module-css/custom-animation.css";
+ 
+ 

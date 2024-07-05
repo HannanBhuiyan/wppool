@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background-color: #EDEDED;
+}
+:root {
+    --primary_font_color : ##191618;
+    --primary_site_color: #2042B6;
+}
+
+@font-face {
+    font-family: "Nantes";
+    src: url('../../fonts/Nantes-Regular.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Messina';
+    src:  url("../../fonts/MessinaSans-Light.woff2"),
+        url("../../fonts/MessinaSans-Bold.woff2"),
+        url("../../fonts/MessinaSans-Regular.woff2"),
+        url("../../fonts/MessinaSans-Book.woff2"),
+        url("../../fonts/MessinaSans-Book.ttf"),
+}
+
+a {
+    text-decoration: none;
+}
+p, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+}
+p {
+    font-family: "Messina";
+}
+li {
+    list-style: none;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mb-150 {
+    margin-bottom: 150px;
+}
+.scrollToTop {
+    position: fixed;
+    bottom: -30%;
+    right: 5%;
+    z-index: 9999;
+}
+.scrollToTop i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--primary_site_color);
+    text-align: center;
+}
+.scrollToTop i,
+.hero-section__menu--commonBtn a,
+.hero-section__menu--commonBtn a::before,
+.hero-section__submenu,
+.hero-section__submenu-item a {
+    transition: all .3s ease-in-out;
+}
+
+/* ======== common button ======== */
+.hero-section__menu--commonBtn a {
+    position: relative;
+    padding: 12px 17px;
+    font-size: 15px;
+    color: #fff; 
+    display: inline-block;
+    border-radius: 100px;
+    font-family: 'Messina';
+    font-weight: 400;
+    overflow: hidden;
+    z-index: 1; 
+}
+.hero-section__menu--commonBtn a::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+}
+.hero-section__menu--commonBtn a:hover::before {
+    height: 600%;
+}
+.hero-section__menu--commonBtn a:hover {
+    color: #000;
+}
+/* ======== common button ======== */
+
+/* ======== common title ======== */
+.common_title p {
+    margin-top: 15px;
+}
+.common_title h3 {
+    color: var(--title_color);
+}
+

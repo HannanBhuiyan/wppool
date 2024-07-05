@@ -1,0 +1,466 @@
+
+/* min css */
+ 
+@media screen and (min-width: 992px) {
+    .mobile-menu {
+        display: none;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, 
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        right: 0 !important;
+        width: 100px !important;
+        left: auto;
+    }
+}
+
+
+
+
+/* CSS rules for extra extra large devices (Large Desktops, Wide Screens) */
+@media only screen and (max-width: 1440px) {
+    
+}
+
+@media  (min-width: 1200px) and (max-width: 1399px) {
+    .room_mobile_para {
+        display: none;
+    }
+    .room_feature {
+        margin-top: 25px;
+    }
+    .home_3_team_img img {
+        max-width: 270px;
+    }
+    .home_3_team_content {
+        padding: 30px;
+    }
+    .home_3_team_content h4 {
+        font-size: 25px;
+    }
+}
+
+/* CSS rules for extra large devices (Desktops, Laptops) */
+@media only screen and (max-width: 1199px) {
+    .staff_info_left {
+        width: 115px;
+    }
+    .staff_details_info {
+        margin-left: 30px;
+    }
+    .home_3_team_img img {
+        max-width: unset;
+        max-height: unset;
+    }
+    .gallery_title_left {
+        width: 500px;
+    }
+    .tab_btn { 
+        margin-right: 12px; 
+        font-size: 12px;
+    }
+    .banner_content h2 {
+        font-size: 60px;
+    }
+    .common_btn a {
+        padding: 12px 17px;
+        font-size: 14px;
+    }
+    .header_inner .header_menu ul li {
+        margin-left: 20px;
+    }
+    .header_inner .header_menu ul li a {
+        padding: 30px 0px;
+        font-size: 14px;
+    }
+    .menu_area .search_icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0px 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .room_item_content {
+        bottom: calc(-100% + 131px);
+    }
+    .room_feature_text p {
+        font-size: 14px;
+    }
+    .blog_meta {
+        flex-wrap: wrap;
+    }
+    .blog_author_name {
+        margin-right: 12px;
+    }
+    .testmonial_content p, .author_name {
+        margin-top: 20px;
+    }
+    .choice_item {
+        margin-bottom: 60px;
+    }
+    .search_input {
+        right: 12px;
+    }
+    .booking_btn a {
+        padding: 16px 0px;
+    }
+    .choice_area {
+        margin-bottom: -60px;
+    }
+    .accordion-button {
+        font-size: 20px !important;
+    }
+    .faq_img img {
+        width: 100%;
+    }
+    .home_3_blog_content .h3_blog_title a {
+        font-size: 25px; 
+        line-height: 30px;  
+    }
+    .history_btn_group {
+        flex-wrap: wrap;
+    }
+    .history_tab_btn {
+        margin-bottom: 20px;
+    }
+    .listing_2_room_item_inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .listing_2_room_item_content {
+        transform: translateY(-70px);
+        width: 64%;
+        height: auto;
+    }
+    .listing_2_room_item_thumbnail img {
+        width: 100%;
+    }
+    .responsive_listing {
+        flex-direction: column-reverse;
+    }
+    .listing_2_mobile_pagi {
+        margin-top: -70px;
+    }
+    .pricing_feature_list {
+        padding: 30px 10px;
+    }
+    .pricing_buy_btn button {
+        padding: 14px 30px;
+    }
+}
+
+/* CSS rules for large devices (Tablets in Landscape Mode, Small Desktop) */
+@media only screen and (max-width: 991px) {
+    .mobile-menu .menu-item-has-children ul li:last-child {
+        padding-bottom: 0; 
+    }
+    .mobile-menu .menu-item-has-children ul {
+        margin: 5px 0px !important;
+    }
+    .mobile-menu .header-bottom .header-menu ul li ul li:last-child {
+        padding-bottom: 0px !important;
+    }
+    .mobile-menu .header-bottom .header-menu ul li ul .menu-item-has-children.m > a::after {
+        top: 12px; 
+    }
+    .staff_details_info {
+        margin-left: unset;
+    }
+    .service_details_innner {
+        margin-bottom: 30px;
+    }
+    .comment-respond {
+        margin-bottom: 30px;
+    }
+    .listing_2_room_item_content {
+        width: 80%;
+    }
+    .history_btn_group { 
+        justify-content: space-evenly; 
+    }
+    .faq_content {
+        padding-inline-end: 0;
+    }
+    .gallery_title_area {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        margin-bottom: 40px;
+    }
+    .gallery_title_left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .banner_content {
+        margin: 100px 0px 252px;
+    }
+    .booking_btn a {
+        padding: 15px 17px;
+    }
+    .banner_pagination {
+        bottom: 20% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        top: auto;
+        display: inline; 
+        padding-right: 0;
+    }
+    .about_big_image img {
+        width: 100%;
+    } 
+    .header_section {
+        display: none;
+    }
+    .blog_item_inner {
+        margin-bottom: 30px;
+    }
+    .blog_item_content h4, 
+    .blog_sm_item_content h4 {
+        max-inline-size: fit-content;
+    }
+    .subscribe_content {
+        margin-bottom: 20px;
+    }
+    /* footer */
+    .footer_item_title h4 {
+        margin-bottom: 20px;
+    }
+    .footer_item {
+        margin-bottom: 40px;
+    }
+    .footer_area {
+        margin: 50px 0px 50px;
+    }
+    .room_mobile_para {
+        display: none;
+    }
+    .booking_box_inner {
+        padding: 30px;
+    }
+    .booking_form_data::after {
+        display: none;
+    }
+    /* home two */
+    .home_2_banner_wrapper {
+        padding: 100px 0px;
+    }
+    .home_2.banner_content {
+        margin: 0px 0px 50px;
+    }
+    .home_3_about_inner {
+        margin-inline-end: 0;
+        margin-bottom: 40px;
+    }
+    .widget-search {
+        margin-top: 30px;
+    }
+}
+
+/* CSS rules for medium devices (Tablets in Portrait Mode, Smartphones in Landscape Mode) */
+@media only screen and (max-width: 767px) {
+    .blog_quote { 
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .blog_quote img { 
+        margin-bottom: 15px;
+    }
+    .pricing_status { 
+        margin: -35px 22px 0px;
+    }
+    .pricing_buy_btn {
+        text-align: center;
+    }
+    .room_feature.room_details {
+        flex-wrap: wrap;
+    }
+    .room_feature.room_details .room_feature_item{
+        margin-bottom: 15px;
+    }
+    .listing_2_room_item_content {
+        width: 90%;
+        padding: 22px 15px;
+    }
+    .room_feature.listing_2 {
+        column-count: 2;
+    }
+    .sub_banner_section {
+        padding: 80px 0px;
+    }
+    .home_3_team_item {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 40px;
+        justify-content: center;
+    }
+    .team_social_icon ul {
+        justify-content: center;
+    }
+    .home_3_team_content {
+        padding: 20px 0px 0px;
+    }
+    .subscribe_area {
+        padding: 20px;
+    }
+    .blog_sm_item_inner {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 5px;
+        background: #F8F5F0;
+    }
+    .booking_btn { 
+        margin-top: 12px;
+    }
+    .slider_arrow_group {
+        margin-top: 30px;
+    }
+    .blog_date {
+        margin: auto;
+        margin-top: -32px
+    }
+    .or::after, .or::before {
+        width: 100px;
+    }
+    .auth_wrapper {
+        padding: 40px;
+    }
+    .not_found_content h2 {
+        font-size: 13rem;
+    }
+    .not_found_content p {
+        font-size: 30px;
+    }
+    .not_found_content {
+        padding: 0px 30px;
+    }
+}
+
+/* CSS rules for small / smartphone devices */
+@media only screen and (max-width: 480px) {
+    .not_found_content h2 {
+        font-size: 5rem;
+    }
+    .not_found_content p {
+        font-size: 30px;
+        margin-top: 0px;
+    } 
+    .or::after, .or::before {
+        width: 80px;
+    }
+    .or::before {
+        left: 25px;
+    }
+    .or::after {
+        right: 25px;
+    }
+    .share_post_list ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .room_facility_list ul li span {
+        font-size: 15px;
+    }
+    .room_facility_list h2 {
+        font-size: 20px; 
+    }
+    .share_post_list ul li,
+    .review_title_txt h4 {
+        margin-bottom: 10px;
+    } 
+    .widget-content h6 {
+        font-size: 18px;
+    }
+    .video_banner_area {
+        padding: 120px 0px;
+        position: relative;
+    }
+    .widget {
+        padding: 15px;
+    }
+    .blog_author_name {
+        margin-bottom: 10px;
+    }
+    .h_3_about_btn_group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tab_btn {
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+    }
+    .modal-body iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+    .banner_content h2 {
+        font-size: 45px;
+    }
+    .about_small_image {
+        right: 15px;
+    }
+    .service_item_name p {
+        margin-left: 33px;
+    }
+    .service_item_name { 
+        flex-wrap: wrap;
+    }
+    .service_name span,
+    .service_item_name p { 
+        font-size: 17px;
+    }
+    .testmonial_content {
+        padding: 60px 30px;
+    }
+    .blog_item_content { 
+        padding: 25px;
+        width: 85%;
+        height: auto;
+    }
+    .input_button button { 
+        padding: 8px 11px
+    }
+    .input_button {
+        right: -36px;
+    }
+    .h_3_about_btn_group .btn_right h2 {
+        font-size: 20px;
+    }
+    .about_content {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .btn_right {
+        margin-top: 20px;
+    }
+    .blog_details_meta {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .or::before {
+        left: 0;
+    }
+    .or::after {
+        right: 0;
+    }
+    .room_feature { 
+        margin-top: 15px;
+    }
+    .room_item_body ul li { 
+        margin-bottom: 9px;
+    }
+}
