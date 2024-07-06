@@ -189,11 +189,159 @@
     </div>
     <!-- hero section end here -->
 
-    <div class="chart_section">
-        <div class="container">
-            <canvas id="myChart" width="400" height="200"></canvas>
-        </div>
+
+    <!-- info section start here -->
+    <div class="info-section">
+        <div class="info-section__area">
+            <div class="hero-section__menu info-section--menu d-flex justify-content-between align-items-center">
+                <div class="hero-section__menu-left">
+                    <div class="hero-section__logo">
+                        <img src="assets/images/logo02.png" alt="logo">
+                    </div>
+                </div>
+                <div class="hero-section__menu-right">
+                    <ul class="hero-section__menu-list">
+                        <li class="hero-section__menu-item hero-section__menu--share hero-section__menu--icon"><i class="fa-solid fa-share-nodes"></i>
+                            <div class="hero-section__submenu">
+                                <ul class="hero-section__submenu-list">
+                                    <li class="hero-section__submenu-item"><a href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li class="hero-section__submenu-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="hero-section__submenu-item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div> 
+                        </li>
+                        <li class="hero-section__menu-item hero-section__menu--commonBtn  hero-section__menu--icon"><a href="#">Download the 2024 Report</a></li>
+                        <li class="hero-section__menu-item info-section--bar"><i class="fa-solid fa-bars"></i></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="info-section__tab">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <div class="info-section__tab-sidebar">
+                            <div class="info-section__tab-list">
+                                <button class="info-section__tab-item tablink tab_active" onclick="infoTabFunc(event,'tabOne')">The Index Tab One</button>
+                                <button class="info-section__tab-item tablink" onclick="infoTabFunc(event,'tabTwo')">The Index Tab Two</button>
+                                <button class="info-section__tab-item tablink" onclick="infoTabFunc(event,'tabThree')">The Index Tab Three</button>
+                                <button class="info-section__tab-item tablink" onclick="infoTabFunc(event,'tabFour')">The Index Tab Four</button>
+                                <button class="info-section__tab-item tablink" onclick="infoTabFunc(event,'tabFive')">The Index Tab Five</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="info-section__tab-content">
+                            <div id="tabOne" class="tab">
+                                <div class="info-section__tab--title">
+                                    <img src="assets/images/04.png" alt="image">
+                                    <h3>The WPPOOL Index</h3>
+                                </div>
+                                <div class="info-section__tab-card-list">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="info-section__tab-card-item">
+                                                <div class="info-section__tab-card-number">
+                                                    <span>+66.2%</span>
+                                                </div>
+                                                <div class="info-section__tab-card-text">
+                                                    <span>WPPOOL Index</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="info-section__tab-card-item">
+                                                <div class="info-section__tab-card-number">
+                                                    <span>+26.6%</span>
+                                                </div>
+                                                <div class="info-section__tab-card-text">
+                                                    <span>Goolge Index</span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="info-section__tab-card-item">
+                                                <div class="info-section__tab-card-number">
+                                                    <span>+34.1%</span>
+                                                </div>
+                                                <div class="info-section__tab-card-text">
+                                                    <span>Microsoft</span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="info-section__tab-card-item">
+                                                <div class="info-section__tab-card-number">
+                                                    <span>+17%</span>
+                                                </div>
+                                                <div class="info-section__tab-card-text">
+                                                    <span>Twitter Index</span>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="info-section__tab-selector">
+                                    <div class="info-section__tab-selector-left">
+                                        <div class="info-section__tab-selector-name">
+                                            <select name="" id="selector">
+                                                <option value="">Sectors</option>
+                                                <option value="">Example One</option>
+                                                <option value="">Example Two</option>
+                                                <option value="">Example Three</option>
+                                                <option value="">Example Four</option>
+                                                <option value="">Example Five</option>
+                                            </select>
+                                        </div>
+                                        <div class="info-section__tab-selector-type">
+                                            <select name="" id="selector-type">
+                                                <option value="">Types of IPO</option>
+                                                <option value="">Example One</option>
+                                                <option value="">Example Two</option>
+                                                <option value="">Example Three</option>
+                                                <option value="">Example Four</option>
+                                                <option value="">Example Five</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="info-section__tab-selector-right">
+                                        <ul class="info-section__tab-summary-list">
+                                            <li class="info-section__tab-summary-item">1Y</li>
+                                            <li class="info-section__tab-summary-item info-section__tab-active-summary">YTD</li>
+                                            <li class="info-section__tab-summary-item">6M</li>
+                                            <li class="info-section__tab-summary-item">1M</li>
+                                            <li class="info-section__tab-summary-item">1W</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="chart_section">
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                            </div>
+                            <div id="tabTwo" class="tab" style="display:none">
+                                <h2>tab two</h2>
+                                <p>Paris is the capital of France.</p> 
+                            </div>
+                            <div id="tabThree" class="tab" style="display:none">
+                                <h2>tab three</h2>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                            <div id="tabFour" class="tab" style="display:none">
+                                <h2>tab FOUR</h2>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                            <div id="tabFive" class="tab" style="display:none">
+                                <h2>tab FIVE</h2>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
+    <!-- info section end here -->
+
+
+
 
     <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-turn-up bg-theme3"></i></a>
 
@@ -214,49 +362,60 @@
                 datasets: [
                     {
                         label: 'WPPOOL',
-                        data: [0, 50, 30, 60, 80, 100, 120],
-                        borderColor: 'red',
+                        data: [0, 50, 79, 60, 55, 100, 120, 78, 44, 78],
+                        borderColor: '#FC714D', 
                         fill: false
                     },
                     {
                         label: 'Google',
-                        data: [0, 70, 30, 45, 60, 75, 90],
-                        borderColor: 'blue',
+                        data: [0, 10, 90, 45, 66, 75, 90, 67, 120, 59],
+                        borderColor: '#615DE3',
                         fill: false
                     },
                     {
                         label: 'Microsoft',
-                        data: [0, 40, 70, 30, 40, 50, 60],
-                        borderColor: 'green',
+                        data: [0, 40, 20, 30, 35, 50, 60, 53, 89, 90],
+                        borderColor: '#AFCD80',
                         fill: false
                     },
                     {
                         label: 'Twitter',
-                        data: [0, 90, 30, 15, 20, 25, 30],
-                        borderColor: 'purple',
+                        data: [0, 90, 50, 15, 47, 25, 30, 34, 55, 77, 100],
+                        borderColor: '#6F34A1',
                         fill: false
                     }
                 ]
             },
             options: {
+                responsive: true,
                 scales: {
                     x: {
                         title: {
-                            display: true,
+                            display: false,
                             text: 'Months'
-                        }
+                        }, 
                     },
                     y: {
                         title: {
-                            display: true,
+                            display: false,
                             text: 'Percentage (%)'
                         },
                         beginAtZero: false,
                         max: 100,
-                        min: -10
+                        min: -10, 
+                        ticks: {
+                            stepSize: 10,
+                            callback: function(value, index, values) {
+                                return value + '%';
+                            }
+                        } , 
                     }
                 },
                 plugins: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                    }, 
                     tooltip: {
                         callbacks: {
                             label: function(context) {
@@ -270,10 +429,26 @@
                                 return label;
                             }
                         }
-                    }
+                    },
+                    
                 }
             }
         });
+    </script>
+    <script>
+        function infoTabFunc(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" tab_active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " tab_active";
+        }
     </script>
 
 </body>

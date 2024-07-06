@@ -1,1 +1,174 @@
- 
+.info-section {
+    margin: 25px;
+}
+.info-section__area {
+    background-color: #fff;
+    padding: 20px;
+}
+.info-section--menu {
+    background-color: #ddd;
+    padding: 0px 30px;
+    border-radius: 5px;
+}
+.hero-section__menu--icon > i , .hero-section__menu--icon > a{
+    color: #000;
+    border: 1px solid var(--primary_site_color);
+}
+.info-section--bar {
+    color: #191618;
+}
+.info-section__tab {
+    margin-top: 20px;
+}
+.info-section__tab-sidebar {
+    background-color: #EFF3F6;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 14px;
+}
+.info-section__tab-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-section__tab-item {
+    width: 100%;
+    text-align: start;
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+    color: #647888;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: "Nantes";
+    position: relative;
+}
+.info-section__tab-item::after {
+    position: absolute; 
+    content: "\2b";
+    font-family: FontAwesome;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #647888;
+}
+.tab_active {
+    background-color: var(--primary_site_color);
+    color: #fff;
+    position: relative;
+}
+.tab_active::after {
+    position: absolute; 
+    content: "\f068";
+    font-family: FontAwesome;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
+}
+.info-section__tab-content {}
+.info-section__tab--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.info-section__tab--title img {
+    margin-right: 10px;
+}
+.info-section__tab--title h3 {
+    font-family: "Nantes";
+    color: #191618;
+}
+.info-section__tab-card-list {}
+.info-section__tab-card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    padding: 15px;
+    border-radius: 6px;
+}
+.info-section__tab-card-number span {
+    font-size: 30px;
+    font-family: "Nantes";
+}
+.col-lg-3:nth-child(1) .info-section__tab-card-item .info-section__tab-card-number span {
+    color: #FC714D;
+}
+.col-lg-3:nth-child(2) .info-section__tab-card-item .info-section__tab-card-number span {
+    color: #615DE3;
+}
+.col-lg-3:nth-child(3) .info-section__tab-card-item .info-section__tab-card-number span {
+    color: #7CA63A;
+}
+.col-lg-3:nth-child(4) .info-section__tab-card-item .info-section__tab-card-number span {
+    color: #6F34A1;
+}
+
+.col-lg-3:nth-child(1) .info-section__tab-card-item .info-section__tab-card-text {
+    border-right: 4px solid #FC714D;
+}
+.col-lg-3:nth-child(2) .info-section__tab-card-item .info-section__tab-card-text {
+    border-right: 4px solid #615DE3;
+}
+.col-lg-3:nth-child(3) .info-section__tab-card-item .info-section__tab-card-text {
+    border-right: 4px solid #7CA63A;
+}
+.col-lg-3:nth-child(4) .info-section__tab-card-item .info-section__tab-card-text {
+    border-right: 4px solid #6F34A1;
+}
+
+
+
+.info-section__tab-card-text {
+    border-right: 4px solid red;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+.info-section__tab-card-text span {
+    color: #191618;
+    font-family: 'Messina';
+    font-weight: 600;
+    max-inline-size: 1ch;
+    display: inline-table;
+    text-align: end;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.info-section__tab-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.info-section__tab-selector-left {
+    display: flex;
+    align-items: center
+}
+.info-section__tab-selector-name {
+    margin-right: 15px;
+}
+.info-section__tab-selector-type {}
+.info-section__tab-selector-right {}
+.info-section__tab-summary-list {
+    display: flex;
+    align-items: center;
+    background: #EFF3F6;
+    padding: 10px 30px;
+    gap: 10px;
+    border-radius: 100px;
+}
+.info-section__tab-summary-item {
+    padding: 6px 18px;
+    border-radius: 100px;
+    color: #748DA1;
+    font-family: "Messina";
+    cursor: pointer;
+}
+.info-section__tab-summary-item:hover, 
+.info-section__tab-active-summary {
+    background-color: var(--primary_site_color);
+    color: #fff;
+}

@@ -12,8 +12,8 @@ Tags: sofware company, techcompany, agency
 	'use strict'; 
 
 	// NICE SELECT
-	$('#adult').niceSelect();
-	$('#children').niceSelect(); 
+	$('#selector').niceSelect();
+	$('#selector-type').niceSelect(); 
 
 
 	AOS.init();
