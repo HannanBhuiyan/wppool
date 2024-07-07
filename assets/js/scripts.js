@@ -14,6 +14,7 @@ Tags: sofware company, techcompany, agency
 	// NICE SELECT
 	$('#selector').niceSelect();
 	$('#selector-type').niceSelect(); 
+	$('#slider-selector').niceSelect(); 
 
 
 	AOS.init();
@@ -24,23 +25,26 @@ Tags: sofware company, techcompany, agency
 		$('.preloader').fadeOut(1000);
 	});
  
-	new Swiper(".home_banner_slider", {
-		// loop: true,
-		// speed: 2000,
+	new Swiper(".wppool-swiper", {
+		loop: true,
+		speed: 2000,
 		// effect: "fade",
 		// autoplay: {
 		// 	enabled: true,
 		// 	delay: 3000,
 		// },
-		pagination: {
-			el: ".swiper-pagination",
+		slidesPerView: 3,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
 		breakpoints: {
 			1200: {
-				slidesPerView: 1,
+				slidesPerView: 3,
 			},
 			1199: {
-				slidesPerView: 1,
+				slidesPerView: 3,
 			},
 			576: {
 				slidesPerView: 1,

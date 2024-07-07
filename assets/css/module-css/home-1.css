@@ -1,5 +1,5 @@
 .info-section {
-    margin: 25px;
+    margin: 25px 25px 60px;
 }
 .info-section__area {
     background-color: #fff;
@@ -119,8 +119,6 @@
     border-right: 4px solid #6F34A1;
 }
 
-
-
 .info-section__tab-card-text {
     border-right: 4px solid red;
     height: 40px;
@@ -172,3 +170,183 @@
     background-color: var(--primary_site_color);
     color: #fff;
 }
+
+/* =====================================
+        companu summery table section start
+========================================= */
+
+.company-table {
+    padding: 25px 25px 40px;
+}
+.company-table__area {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.company-table__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.company-table__title-left {}
+.company-table__title-left h2 {
+    color: var(--primary_font_color);
+}
+.company-table__title-right {
+    position: relative;
+}
+.company-table__title-right input {
+    width: 588px;
+    background: #DADADA;
+    border: none;
+    padding: 15px 30px 15px 60px;
+    border-radius: 8px;
+}
+.company-table__title-right input,
+.company-table__title-right input::placeholder {
+    color: var(--primary_font_color);
+    font-size: 24px;
+    font-family: 'Nantes';
+}
+.company-table__title-search-icon {}
+.company-table__title-search-icon i {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    font-size: 22px;
+}
+.company-table__wrapper {
+    height: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.company-table__wrapper table td {
+    font-family: "Messina";
+}
+.company-table__wrapper table td {
+    font-family: "Nantes";
+}
+.table>:not(caption)>*>* {
+    border-bottom-width: 0px;
+}
+.company-table__wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.company-table__wrapper::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 3px;
+}
+.company-table__wrapper::-webkit-scrollbar-thumb {
+    background: var(--primary_site_color);
+    border-radius: 3px;
+}
+.company-table__button {}
+.company-table__button-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.company-table__button--btn a {
+    background-color: var(--primary_site_color);
+    -webkit-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+}
+ 
+.future-listing {
+    margin: 100px 0px 150px;
+}
+.future-listing__area {}
+.future-listing__title {}
+.future-listing__title h2 {}
+.future-listing__title p {
+    max-inline-size: 96ch;
+    margin: 10px 0px 25px;
+}
+.future-listing__list {}
+.future-listing__list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.fututre-listing__item {
+    width: 220px;
+    height: 120px;
+    background: #fff;
+    line-height: 120px;
+    border-radius: 6px;
+}
+/* =====================================
+    companu summery table section end
+========================================= */
+
+/* =====================================
+            slider section start
+========================================= */
+.wppool-slider {
+    margin-bottom: 190px;
+}
+.wppool-slider__area {
+    overflow: hidden;
+    background-image: url(../../images/slider-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+    padding-bottom: 50px;
+} 
+.wppool-slider__title {}
+.wppool-slider__title h2 {
+    margin-bottom: 10px;
+}
+.wppool-slider__title-selector {
+    display: inline-block;
+}
+.wppool-slider__title p {
+    padding: 10px 0px 20px;
+}
+
+.wppool-slider__inner {
+    position: relative;
+    right: -16%;
+}
+.swiper {
+    padding-bottom: 100px;
+}
+.wppool-slider__image img {
+    width: 100%;
+    height: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 88%;
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    line-height: 56px;
+    text-align: center;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    left: 80px; 
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 300; 
+}
+.swiper-button-next:after {
+    content: "\f178"; 
+}
+
+.swiper-button-prev:after {
+    content: "\f177";
+}
+/* =====================================
+        slider section end
+========================================= */
