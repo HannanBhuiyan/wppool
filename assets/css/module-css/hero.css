@@ -91,9 +91,6 @@
     color: #fff;
     margin-top: 40px;
 }
-.hero-section__content-item h3 {
-    font-family: "Nantes";
-}
 .hero-section__content-item p {
     color: #cdcdcd;
 }
@@ -105,7 +102,6 @@
     color: #fff;
 }
 .hero-section__content-inner h2 {
-    font-family: "Nantes";
     font-weight: 400;
     font-size: 78px;
 }

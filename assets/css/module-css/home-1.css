@@ -1,3 +1,6 @@
+/* =====================================
+        info section start
+========================================= */
 .info-section {
     margin: 25px 25px 60px;
 }
@@ -13,9 +16,6 @@
 .hero-section__menu--icon > i , .hero-section__menu--icon > a{
     color: #000;
     border: 1px solid var(--primary_site_color);
-}
-.info-section--bar {
-    color: #191618;
 }
 .info-section__tab {
     margin-top: 20px;
@@ -39,7 +39,7 @@
     color: #647888;
     border-radius: 5px;
     background-color: transparent;
-    font-family: "Nantes";
+    font-family: var(--nantes_font);
     position: relative;
 }
 .info-section__tab-item::after {
@@ -76,10 +76,6 @@
 .info-section__tab--title img {
     margin-right: 10px;
 }
-.info-section__tab--title h3 {
-    font-family: "Nantes";
-    color: #191618;
-}
 .info-section__tab-card-list {}
 .info-section__tab-card-item {
     display: flex;
@@ -91,7 +87,7 @@
 }
 .info-section__tab-card-number span {
     font-size: 30px;
-    font-family: "Nantes";
+    font-family: var(--nantes_font);
 }
 .col-lg-3:nth-child(1) .info-section__tab-card-item .info-section__tab-card-number span {
     color: #FC714D;
@@ -125,9 +121,8 @@
     align-items: center;
     display: flex;
 }
-.info-section__tab-card-text span {
-    color: #191618;
-    font-family: 'Messina';
+.info-section__tab-card-text span { 
+    font-family: var(--messina_font);
     font-weight: 600;
     max-inline-size: 1ch;
     display: inline-table;
@@ -162,7 +157,7 @@
     padding: 6px 18px;
     border-radius: 100px;
     color: #748DA1;
-    font-family: "Messina";
+    font-family: var(--messina_font);
     cursor: pointer;
 }
 .info-section__tab-summary-item:hover, 
@@ -172,7 +167,12 @@
 }
 
 /* =====================================
-        companu summery table section start
+        info section end
+========================================= */
+
+
+/* =====================================
+    companu summery table section start
 ========================================= */
 
 .company-table {
@@ -189,10 +189,6 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.company-table__title-left {}
-.company-table__title-left h2 {
-    color: var(--primary_font_color);
-}
 .company-table__title-right {
     position: relative;
 }
@@ -205,9 +201,8 @@
 }
 .company-table__title-right input,
 .company-table__title-right input::placeholder {
-    color: var(--primary_font_color);
     font-size: 24px;
-    font-family: 'Nantes';
+    font-family: var(--nantes_font);
 }
 .company-table__title-search-icon {}
 .company-table__title-search-icon i {
@@ -223,10 +218,10 @@
     overflow-y: scroll;
 }
 .company-table__wrapper table td {
-    font-family: "Messina";
+    font-family: var(--messina_font);
 }
 .company-table__wrapper table td {
-    font-family: "Nantes";
+    font-family: var(--nantes_font);
 }
 .table>:not(caption)>*>* {
     border-bottom-width: 0px;
@@ -255,7 +250,14 @@
     -moz-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
     box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
 }
- 
+/* =====================================
+    company table section end
+========================================= */
+
+/* =====================================
+    future listing section start
+========================================= */
+
 .future-listing {
     margin: 100px 0px 150px;
 }
@@ -267,14 +269,39 @@
     margin: 10px 0px 25px;
 }
 .future-listing__list {}
-.future-listing__list ul {
+.future-listing__list ul,
+.company-logo__list ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     text-align: center;
 }
-.fututre-listing__item {
+.fututre-listing__item{
+    position: relative;
+}
+.fututre-listing__item::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border: 1px dashed var(--primary_site_color);
+    border-width: 2px;
+    transform: scale(0);
+    transition: all 0.6s ease-in-out;
+    border-radius: 6px;
+    z-index: -1;
+}
+.fututre-listing__item:hover::after{
+    transform: scale(1);
+}
+.fututre-listing__item:hover {
+    transform: scale(0.8);
+}
+.fututre-listing__item,
+.company-logo__item {
     width: 220px;
     height: 120px;
     background: #fff;
@@ -282,11 +309,12 @@
     border-radius: 6px;
 }
 /* =====================================
-    companu summery table section end
+    future listing section end
 ========================================= */
+ 
 
 /* =====================================
-            slider section start
+        slider section start
 ========================================= */
 .wppool-slider {
     margin-bottom: 190px;
@@ -316,14 +344,10 @@
     position: relative;
     right: -16%;
 }
-.swiper {
-    /* padding-bottom: 100px; */
-}
 .wppool-slider__image img {
     width: 100%;
     height: auto;
 }
-
 .swiper-button-next, .swiper-button-prev {
     position: relative;
     top: 10px;
@@ -352,7 +376,6 @@
 .swiper-button-next:after {
     content: "\f178"; 
 }
-
 .swiper-button-prev:after {
     content: "\f177";
 }
@@ -372,7 +395,7 @@
     margin-left: 40px;
 }
 .wppool-slider__bottom-count-pages span {
-    font-family: 'Messina';
+    font-family: var(--messina_font);
 }
 .wppool-slider__bottom-left {
     display: flex;
@@ -385,19 +408,16 @@
     background-color: #fff !important;
 }
 .nice-select.page-count {
-    color: var(--primary_font_color);
     margin: 0px 15px;
     width: 130px;
     height: 52px;
     line-height: 53px;
-    font-family: 'Messina';
+    font-family: var(--messina_font);
     -webkit-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
     -moz-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
     box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
 }
-/* .nice-select.page-count.open .list, span.current {
-    background: #fff;
-} */
+
 .nice-select.page-count  .option:hover, .nice-select.page-count .option.focus, .nice-select.page-count  .option.selected.focus {
     background: #ddd !important;
 }
@@ -419,9 +439,13 @@
 /* =====================================
         team section end
 ========================================= */
-
 .wppool-team {
     margin-bottom: 100px;
+}
+.wppool-about__wrapper {
+    padding: 80px 0px 100px;
+    border-top: 1px solid #90B8F0;
+    border-bottom: 1px solid #90B8F0;
 }
 .wppool-team__area {}
 .wppool-team__title {
@@ -438,7 +462,6 @@
 }
 .wppool-team__inner-item:hover .wppool-team__inner-content a {
     background-color: #fff;
-    color: var(--primary_font_color);
     -webkit-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
     -moz-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
     box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
@@ -453,7 +476,7 @@
     background: #ffff;
     padding: 2px 8px;
     font-size: 12px;
-    font-family: 'Messina';
+    font-family: var(--messina_font);
     font-weight: 600;
 }
 .wppool-team__inner-content {}
@@ -469,7 +492,7 @@
     padding: 10px 20px;
     display: inline-block;
     border-radius: 100px;
-    font-family: 'Messina';
+    font-family: var(--messina_font);
     margin-top: 15px;
 }
 
@@ -480,7 +503,9 @@
 /* =====================================
         about section end
 ========================================= */
-.wppool-about {}
+.wppool-about {
+    margin-bottom: 120px;
+}
 .wppool-about__area {
     background-color: #fff;
     border-radius: 12px;
@@ -489,14 +514,144 @@
     padding-left: 70px;
 }
 .wppool-about__area-content h2 {}
-.wppool-about__area-content h3 {}
-.wppool-about__area-content p {}
+.wppool-about__area-content h3 {
+    font-size: 30px;
+    color: #7D7F81;
+    margin: 4px 0px 10px;
+}
+.wppool-about__area-content p {
+    margin-bottom: 30px;
+}
 .wppool-about__area-image {
     text-align: end;
 }
 .wppool-about__area-image img {}
 
+/* =====================================
+        about section end
+========================================= */
 
 /* =====================================
         about section end
+========================================= */
+.company-logo {
+    margin-bottom: 58px;
+}
+.company-logo__title h2 {
+    font-family: var(--nantes_font);
+    margin-bottom: 48px;
+}
+
+/* =====================================
+        about section end
+========================================= */
+
+
+/* =====================================
+        footer section end
+========================================= */
+.footer {
+    background: #E6E6E6;
+    padding: 70px 0px;
+}
+.footer__area {}
+.footer__item {}
+.footer__item h3 {
+    font-family: var(--nantes_font);
+    max-inline-size: 21ch;
+}
+.footer__item-title {}
+.footer__item-title h6 {
+    font-weight: 700;
+    color: #9FA0A1;
+    font-size: 20px;
+    margin-bottom: 20px
+}
+.footer__item-list {}
+.footer__item-list ul {}
+.footer__item-list ul li {}
+.footer__item-list ul li a {
+    color: #115CD9;
+    font-size: 20px;
+    font-family: var(--messina_font);
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 600;
+}
+.footer__item-list ul li a:hover {
+    transform: translateX(15px);
+}
+.footer__right-item-inner {}
+.footer__right-item {
+    padding: 30px 0px;
+    border-bottom: 1px solid #9FA0A1;
+}
+.footer__right-item:last-child {
+    border-bottom: none;
+}
+.footer__right-item:first-child {
+    padding-top: 0px;
+}
+.footer__right-item h4,
+.footer__right-item p,
+.info-section--bar ,
+.info-section__tab--title h3,
+.info-section__tab-card-text span,
+.company-table__title-left h2,
+.company-table__title-right input,
+.company-table__title-right input::placeholder,
+.nice-select.page-count,
+.wppool-team__inner-item:hover .wppool-team__inner-content a,
+.wppool-about__area-content p {
+    color: var(--primary_font_color);
+}
+.footer__right-item h4 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--messina_font);
+    padding-bottom: 10px;
+}
+.footer__right-item p {
+    font-size: 20px;
+    max-inline-size: 24ch;
+}
+.footer__right-social-icon {}
+.footer__right-social-icon ul {
+    display: flex;
+    align-items: center;
+}
+.footer__right-social-icon ul li {
+    margin-right: 20px;
+}
+.footer__right-social-icon ul li i {
+    color: #9FA0A1;
+    font-size: 30px;
+}
+.footer__bottom {}
+.footer__bottom p {
+    max-inline-size: 65ch;
+    color: #000000;
+    font-family: var(--messina_font);
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer__bottom-list {
+    margin-bottom: 15px;
+}
+.footer__bottom-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer__bottom-list ul li {
+    margin-right: 10px;
+}
+.footer__bottom-list ul li, 
+.footer__bottom-list ul li a {
+    color: #9FA0A1;
+    font-family: var(--messina_font);
+}
+ 
+/* =====================================
+        footer section end
 ========================================= */

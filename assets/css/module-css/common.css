@@ -4,10 +4,6 @@ body {
     outline: 0;
     background-color: #EDEDED;
 }
-:root {
-    --primary_font_color : ##191618;
-    --primary_site_color: #2042B6;
-}
 
 @font-face {
     font-family: "Nantes";
@@ -22,6 +18,12 @@ body {
         url("../../fonts/MessinaSans-Book.woff2"),
         url("../../fonts/MessinaSans-Book.ttf"),
 }
+:root {
+    --primary_font_color : #191618;
+    --primary_site_color: #2042B6;
+    --nantes_font: "Nantes";
+    --messina_font: 'Messina';
+}
 
 a {
     text-decoration: none;
@@ -32,13 +34,14 @@ p, ul, h1, h2, h3, h4, h5, h6 {
 }
 h2 {
     font-size: 48px;
-    font-family: 'Nantes';
+    font-family: var(--nantes_font);
 }
 h3 {
     font-size: 36px;
+    font-family: var(--nantes_font);
 }
 p {
-    font-family: "Messina";
+    font-family: var(--messina_font);
 }
 li {
     list-style: none;
@@ -101,7 +104,9 @@ li {
 .hero-section__submenu,
 .hero-section__submenu-item a,
 .info-section__tab-summary-item,
-.wppool-team__inner-content a  {
+.wppool-team__inner-content a,
+.footer__item-list ul li a,
+.fututre-listing__item  {
     transition: all .3s ease-in-out;
 }
 
