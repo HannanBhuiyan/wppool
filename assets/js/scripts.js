@@ -15,6 +15,7 @@ Tags: sofware company, techcompany, agency
 	$('#selector').niceSelect();
 	$('#selector-type').niceSelect(); 
 	$('#slider-selector').niceSelect(); 
+	$('#count-pages').niceSelect(); 
 
 
 	AOS.init();
@@ -27,12 +28,6 @@ Tags: sofware company, techcompany, agency
  
 	new Swiper(".wppool-swiper", {
 		loop: true,
-		speed: 2000,
-		// effect: "fade",
-		// autoplay: {
-		// 	enabled: true,
-		// 	delay: 3000,
-		// },
 		slidesPerView: 3,
 		spaceBetween: 30,
 		navigation: {
