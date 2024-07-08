@@ -100,7 +100,8 @@ li {
 .hero-section__menu--commonBtn a::before,
 .hero-section__submenu,
 .hero-section__submenu-item a,
-.info-section__tab-summary-item  {
+.info-section__tab-summary-item,
+.wppool-team__inner-content a  {
     transition: all .3s ease-in-out;
 }
 
@@ -137,10 +138,5 @@ li {
 /* ======== common button ======== */
 
 /* ======== common title ======== */
-.common_title p {
-    margin-top: 15px;
-}
-.common_title h3 {
-    color: var(--title_color);
-}
+
 

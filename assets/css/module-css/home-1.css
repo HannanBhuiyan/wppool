@@ -218,7 +218,7 @@
     font-size: 22px;
 }
 .company-table__wrapper {
-    height: 450px;
+    height: 490px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -420,8 +420,83 @@
         team section end
 ========================================= */
 
-
+.wppool-team {
+    margin-bottom: 100px;
+}
+.wppool-team__area {}
+.wppool-team__title {
+    margin-bottom: 50px;
+}
+.wppool-team__title h2 {}
+.wppool-team__title p {}
+.wppool-team__inner {}
+.wppool-team__inner-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+.wppool-team__inner-item:hover .wppool-team__inner-content a {
+    background-color: #fff;
+    color: var(--primary_font_color);
+    -webkit-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 24px 24px 0px rgba(0,0,0,0.36);
+}
+.wppool-team__inner-image {
+    margin-top: -77px;
+    position: relative;
+}
+.wppool-team__inner-image-tag {
+    position: absolute;
+    top: 0;
+    background: #ffff;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-family: 'Messina';
+    font-weight: 600;
+}
+.wppool-team__inner-content {}
+.wppool-team__inner-content h5 {
+    font-size: 16px;
+    color: #2042B6;
+    padding: 20px 0px 8px;
+}
+.wppool-team__inner-content p {}
+.wppool-team__inner-content a {
+    background: #2042B6;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: 'Messina';
+    margin-top: 15px;
+}
 
 /* =====================================
         team section end
+========================================= */
+
+/* =====================================
+        about section end
+========================================= */
+.wppool-about {}
+.wppool-about__area {
+    background-color: #fff;
+    border-radius: 12px;
+}
+.wppool-about__area-content {
+    padding-left: 70px;
+}
+.wppool-about__area-content h2 {}
+.wppool-about__area-content h3 {}
+.wppool-about__area-content p {}
+.wppool-about__area-image {
+    text-align: end;
+}
+.wppool-about__area-image img {}
+
+
+/* =====================================
+        about section end
 ========================================= */
