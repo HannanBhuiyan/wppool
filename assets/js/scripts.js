@@ -41,6 +41,9 @@ Tags: sofware company, techcompany, agency
 			1199: {
 				slidesPerView: 3,
 			},
+			767: {
+				slidesPerView: 2,
+			},
 			576: {
 				slidesPerView: 1,
 			} ,
@@ -51,6 +54,15 @@ Tags: sofware company, techcompany, agency
 	});
 
 	/*END SWIPER JS*/	
+
+
+	// tab menu
+	$(".bar-icon").click(function() {
+		$(".tab-menu__area").addClass("tab-menu__area-open")
+	})
+	$(".tab-menu__title-times-btn").click(function() {
+		$(".tab-menu__area").removeClass("tab-menu__area-open") 
+	})
 
  
 	var fixed_top = $(".common_sticky_menu");
@@ -90,8 +102,12 @@ Tags: sofware company, techcompany, agency
 	$('a.scrollToTop').on('click', function () {
 		$('html, body').animate({
 			scrollTop: 0
-		}, 500);
+		}, 1000);
 		return false;
+	});
+	// scroll bottom
+	$('.scrollToBottom').on('click', function () {
+		$("html, body").animate({ scrollTop: $("html, body").prop("scrollHeight") }, 1000);
 	});
 	 
 

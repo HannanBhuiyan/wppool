@@ -7,6 +7,8 @@
 }
 .hero-section__area {
     padding: 30px;
+    position: relative;
+    overflow: hidden;
 }
 .hero-section__menu {}
 .hero-section__menu-left {}
@@ -22,6 +24,11 @@
     border: 1px solid #fff;
     margin: 0px 20px;
 }
+.hero-section__menu-item i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .hero-section__menu--share {
     position: relative; 
     padding: 0px 0px 20px 50px;
@@ -142,28 +149,87 @@
 /* hero content left item */
 
 
-
+/* =====================================
+==================tab menu ============ */
+.tab-menu {}
+.tab-menu__area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 36px 36px;
+    transform: translateX(500px);
+    z-index: 999;
+    transition: transform .5s ease-in-out;
+}
+.tab-menu__area-open {
+    transform: translateX(0px);
+    transition: transform .5s ease-in-out;
+}
+.tab-menu__title {}
+.tab-menu__title-list {
+    margin-bottom: 10px;
+}
+.tab-menu__title--share--btn {
+    padding: 0px 0px 20px 0px;
+}
+.tab-menu__title--share--btn > i {
+    background-color: #AFCD80;
+}
+.tab-menu__title--menu--list {}
+.tab-menu__title--download--btn a {
+    background-color: #2042B6;
+}
+.tab-menu__title-times-btn {}
+.tab-menu__inner {}
+.tab-menu__list {}
+.tab-menu__list-item {}
+.tab-menu__list-item a {
+    color: #191618;
+    font-size: 18px;
+    font-family: var(--messina_font);
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all .3s;
+}
+.tab-menu__list-item a:hover {
+    color: var(--primary_site_color);
+    transform: translateX(10px);
+}
+.tab-menu__list-item:last-child a {
+    margin-bottom: 0px;
+}
+.tab-menu__title-times-btn {
+    color: #000;
+    font-size: 25px;
+}
+/* =====================================
+==================tab menu ============ */
 
 // sticky menu
 .sticky-menu, 
 .mobile-sticky-menu {
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
-
 .sticky-menu {
-    padding: 20px 0px; 
     position: fixed !important;
-    left: 0 !important;
-    top: 0 !important;
     width: 100% !important;
-    z-index: 9 !important;
+    z-index: 99 !important;
+    background: #F3F3F3;
+    max-width: calc(100% - 119px);
+    top: 0;
+    padding: 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 24px 24px 0px rgba(0, 0, 0, 0.36);
 }
 .mobile-sticky-menu {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 9 !important;  
+    z-index: 99 !important;  
 }
 
 /* MOBILE MENU SECTION CSS START HERE */
@@ -182,7 +248,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:var(--secondary_color);
+    background: var(--primary_font_color);
     padding: 25px;
 }
 .mobile-menu .header-item .header-item-right span i {
@@ -222,8 +288,8 @@
 }
 .mobile-menu .header-bottom .header-menu ul li{
     list-style: none;
-    border-bottom: 1px solid var(--primary_color);
-    padding: 18px 0px;
+    border-bottom: 1px solid var(--primary_font_color);
+    padding: 14px 0px;
     margin: 0px 25px;
 }
 .mobile-menu .header-bottom .header-menu ul li:last-child {
@@ -240,7 +306,7 @@
     font-family: "Font Awesome 5 Free";
     transition:  all .3s ease-in-out;
     position: absolute;
-    color: var(--primary_color);
+    color: var(--primary_font_color);
 }
 .mobile-menu .header-bottom .header-menu ul li ul {
     display: none;
@@ -254,6 +320,7 @@
     color: black;
     text-decoration: none;
     display: block;
+    font-family: var(--messina_font);
 }
 .mobile-menu .header-bottom .header-menu ul li span i {
     position: absolute;
